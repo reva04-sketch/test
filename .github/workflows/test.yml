@@ -4,14 +4,14 @@ on:
   push: 
     branches: 
       - main
-  jobs: 
-    test-pipeline:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Task1
-          run: echo "Pipeline started"
-        - name: Task2
-          run: echo "Running on GitHub Actions runner"
-        - name: Task3
-          run: echo "Pipeline finished successfully"
+jobs: 
+  test-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Task1
+        run: echo "Pipeline started"
+      - name: Task2
+        run: echo "Running on GitHub Actions runner"
+      - name: Task3
+        run: echo "Pipeline finished successfully"
     
